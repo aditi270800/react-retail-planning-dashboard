@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── AG Grid dark theme overrides ─────────────────────────────────────── */
+.ag-theme-alpine-dark {
+  --ag-background-color: #161b27;
+  --ag-odd-row-background-color: #191f2e;
+  --ag-header-background-color: #1c2333;
+  --ag-border-color: #2e3a52;
+  --ag-row-border-color: rgba(46,58,82,0.6);
+  --ag-header-foreground-color: #64748b;
+  --ag-foreground-color: #e2e8f0;
+  --ag-selected-row-background-color: rgba(99,102,241,0.1);
+  --ag-range-selection-border-color: #6366f1;
+  --ag-cell-horizontal-border: solid rgba(46,58,82,0.5);
+  --ag-font-family: 'DM Sans', sans-serif;
+  --ag-font-size: 12px;
+  --ag-row-hover-color: rgba(99,102,241,0.05);
+  --ag-header-column-separator-display: block;
+  --ag-header-column-separator-color: rgba(46,58,82,0.8);
+  --ag-input-focus-border-color: #6366f1;
+  --ag-input-border-color: #2e3a52;
+  --ag-input-background-color: #232d42;
+}
+
+.planning-grid {
+  height: 100%;
+  width: 100%;
+}
+
+/* Month group headers */
+.ag-theme-alpine-dark .ag-header-group-cell {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #818cf8 !important;
+  border-bottom: 2px solid rgba(99,102,241,0.3) !important;
+}
+
+/* Week sub-group headers */
+.ag-theme-alpine-dark .ag-header-cell {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Editable cells hint */
+.ag-theme-alpine-dark .editable-cell {
+  cursor: cell;
+}
+
+/* Cell editing */
+.ag-theme-alpine-dark .ag-cell-inline-editing {
+  background-color: #1e2a42 !important;
+  border: 1.5px solid #6366f1 !important;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15) !important;
+}
+
+.ag-theme-alpine-dark .ag-cell-inline-editing input {
+  color: #fff;
+  background: transparent;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+}
+
+/* Scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2e3a52 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: #2e3a52;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: #3d4f6e; }
+
+/* AG Grid scrollbar */
+.ag-theme-alpine-dark ::-webkit-scrollbar { width: 5px; height: 5px; }
+.ag-theme-alpine-dark ::-webkit-scrollbar-track { background: #161b27; }
+.ag-theme-alpine-dark ::-webkit-scrollbar-thumb { background: #2e3a52; border-radius: 3px; }
