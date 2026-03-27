@@ -1,6 +1,7 @@
 # Retail Planning Dashboard
 
 A production-grade retail planning tool built with React + Vite + TypeScript + Redux Toolkit + AG Grid + Recharts.
+When you open the link https://react-retail-planning-dashboard-zf8.vercel.app/, click on the button "load sample data" and it will load all the sample data.
 
 ## Tech Stack
 
